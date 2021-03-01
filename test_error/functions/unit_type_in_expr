@@ -1,0 +1,18 @@
+program unit_type_in_expr
+	var a1, a2, a3 : int;
+	var b1, b2, b3 : bool;
+	var t1 : array[0..1] of int;
+
+
+
+function addition(p1 : int, p2 : int) : unit
+	var res : int;
+	begin
+		res := p1 + p2;
+	end;
+	
+begin
+	a1 := 1;
+	a2 := 3;
+	a3 := a1 + a2 + addition(a1,a2);
+end

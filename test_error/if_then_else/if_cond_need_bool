@@ -1,0 +1,10 @@
+program if_cond_need_bool
+    var i,j : int
+
+begin
+
+if i then 
+   begin 
+       i := 1;
+   end;  
+end

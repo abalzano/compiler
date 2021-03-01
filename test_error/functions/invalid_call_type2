@@ -1,0 +1,17 @@
+program invalid_call_type2
+    
+    var a1,a2 : int;
+	var c1 : bool;
+    
+function addition(b1 : int, b2 : int) : int
+	var res : int;
+	begin
+		res := b1 + b2;
+		return res;
+	end;
+
+begin
+	a1 := 1;
+	a2 := addition(a1, c1);
+	write a2;
+end

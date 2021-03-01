@@ -1,0 +1,33 @@
+(* Ceci est un exemple de code SCALPA *)
+program maxi
+    var i,j,max : int;
+    var val : array[-4..4, 0..10] of int;
+    var simple_array : array[0..5] of int;
+    var bool_array : array[0..10] of bool;
+
+function max_array(t : array[-4..4, 0..10] of int) : int
+    var i2,j2,maximum : int;
+    begin
+        i2 := -4;
+        read j2;
+        j2 := 0;
+        maximum := t[-4,0];
+        i := t[i2,j2];
+        a := i > j; 
+        if true then 
+            begin 
+            i := 1;
+            end;
+        return t;
+    end;
+
+
+begin
+    max_array(val);
+    a := not true;
+    max := max_array(val);
+    i := val[i,j];
+    i := (simple_array[8]*6)+val[i,j];
+    write "hello world";
+end
+

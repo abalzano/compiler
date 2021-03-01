@@ -1,0 +1,22 @@
+program invalid_return_type
+    
+    var a1,b2 : int;
+	var c1 : bool;
+	
+    function adition(a : int, b : int) : bool
+    
+		var sum : int;
+		
+		begin
+			sum := a + b;
+			return sum;
+    
+   		end;
+    
+
+begin
+	a1 := 1;
+	b2 := 2;
+	c1 := adition(a1,b2);
+	write c1;
+end

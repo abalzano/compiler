@@ -1,0 +1,13 @@
+program while_need_bool
+    var i,j : int
+
+begin
+    i := 0;
+    while j do 
+        begin 
+            j = i + 1;
+        end 
+end    
+    
+    
+

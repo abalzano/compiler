@@ -1,0 +1,8 @@
+program invalid_assign_array
+    var i,j,count : int;
+    var test : bool;
+    var val : array[-4..4, 0..10] of int
+
+begin
+	val[0, 0] := test;
+end

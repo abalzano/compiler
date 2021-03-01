@@ -1,0 +1,15 @@
+program wrong_ret_type
+    var i,j,max : int;
+
+
+function f_1() : bool
+    var a_bool : bool;
+    begin
+        return a_bool;
+    end;
+
+
+begin
+    max := f_1();
+end
+

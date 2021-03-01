@@ -1,0 +1,16 @@
+program write_array
+    
+	var a1,a2 : int;
+	var t1 : array[1..3] of int;
+    
+function addition(t : array[1..2] of int) : int
+	var res : int;
+	begin
+		res := t[0] + t[1];
+		return res;
+	end;
+
+begin
+	write t1;
+	write a2;
+end

@@ -1,0 +1,17 @@
+program binary_test
+	var count, max, sum, pow : int;
+
+begin
+	read max;
+	count := 0;
+	sum := 0;
+	pow := 0;
+	while count < max do
+	begin
+		pow := 2^count;
+		sum := sum + pow;
+		count := count + 1;
+	end;
+	write sum;
+	write "\n";
+end

@@ -1,0 +1,51 @@
+program sort_array
+	var t : array[0..5] of int;
+	var k, j, i, len_array, temp1, temp2 : int;
+	var b1, b2 : bool;
+
+	
+begin
+	t[0] := 10;
+	t[1] := 5;
+	t[2] := 8;
+	t[3] := 78;
+	t[4] := 4;
+	t[5] := 12;
+
+	len_array := 6;
+	i := 0;
+	while i < len_array do
+	begin
+
+		j := 0;
+		b1 := t[i] > t[j];
+		b2 := j < i;
+		while b1 and b2 do
+		begin
+			j := j + 1;
+			b1 := t[i] > t[j];
+			b2 := j < i;
+		end;
+		
+		k := j;
+		temp1 := t[k];
+		while k < i do
+		begin
+			temp2 := t[k+1];
+			t[k+1] := temp1;
+			temp1 := temp2;
+			k := k + 1;
+		end;
+		
+		t[j] := temp1;
+		i := i + 1;
+	end;
+	
+	i := 0;
+	while i < len_array do
+	begin
+		write t[i];
+		write "\n";
+		i := i + 1;
+	end;
+end

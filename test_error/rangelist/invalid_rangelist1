@@ -1,0 +1,6 @@
+program invalid_rangelist1
+
+	var tab1 : array[4..-4] of int;
+
+begin
+end

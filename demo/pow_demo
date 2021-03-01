@@ -1,0 +1,12 @@
+program pow_demo
+	var n, e : int;
+	
+begin
+	write "func pow(n,e) give n, then e\n"; 
+	read n;
+	read e;
+	write "pow : ";
+	write n^e;
+	write "\n";
+
+end

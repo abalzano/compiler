@@ -1,0 +1,7 @@
+program maxi
+    var i,j,count : int;
+    var val : array[-4..4, 0..10] of int
+
+begin
+	i := val;
+end

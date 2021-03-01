@@ -1,0 +1,7 @@
+program assign_array_2_lvalue
+    var b : array[-4..4, 0..10] of int;
+	var a : int;
+		
+begin
+	a := b;
+end

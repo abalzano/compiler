@@ -1,0 +1,11 @@
+program unit_type_parameter
+    
+    function fini(t : unit) : unit
+    begin
+        write "programme termine"
+    end;
+    
+
+begin
+
+end

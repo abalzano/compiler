@@ -1,0 +1,12 @@
+program not_a_fun
+    
+    var a1,b2 : int;
+	var c1 : bool;
+    
+
+begin
+	a1 := 1;
+	b2 := 2;
+	c1 := b2(a1);
+	write c1;
+end

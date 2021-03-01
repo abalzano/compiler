@@ -1,0 +1,16 @@
+program str_op_not_allowed
+	var a : int;
+	var b : bool;
+	var t1 : array[0..1] of int;
+
+
+function addition(t : array[0..1] of int) : int
+	var res : int;
+	begin
+		res := t[0] + t[1];
+		return res;
+	end;
+
+begin
+	a := "test1" + "test2";
+end

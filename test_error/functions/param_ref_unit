@@ -1,0 +1,13 @@
+program ref_type_parameter
+    
+    
+    
+    function fini(ref t : unit) : unit
+    begin
+        write "programme termine"
+    end;
+    
+
+begin
+
+end

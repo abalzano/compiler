@@ -1,0 +1,8 @@
+program string_var_assign
+    var i,j : int;
+    var str : string;
+begin
+    i := 0;
+    str := "test";
+     
+end

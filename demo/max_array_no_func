@@ -1,0 +1,43 @@
+(* Ceci est un exemple de code SCALPA *)
+program maxi
+    var i,j,count : int;
+    var val : array[-4..4, 0..10] of int
+
+begin
+    i := -4;
+    j := 0;
+    count := 0;
+    while i <= 4 do
+    begin
+        j := 0;
+        while j <= 10 do
+        begin
+            write "[";
+            write i;
+            write ",";
+            write j;
+            write "],";
+            j := j+1;
+            count := count + 1;
+            val[i,j] := count;
+        end;
+        write "\n";
+        i := i+1
+    end;
+    
+    i := -4;
+    j := 0;
+    count := 0;
+    while i <= 4 do
+    begin
+        j := 0;
+        while j <= 10 do
+        begin
+            write val[i,j];
+            write ",";
+            j := j+1;
+        end;
+        write "\n";
+        i := i+1
+    end;
+end

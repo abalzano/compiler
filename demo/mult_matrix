@@ -1,0 +1,53 @@
+program fusion
+	var t1, t2, t3: array[0..1, 0..1] of int;
+	var k, j, i, temp1, temp2, temp3, len_array : int;
+	
+begin
+	t1[0,0] := 1;
+	t1[0,1] := 2;
+	t1[1,0] := 3;
+	t1[1,1] := 4;
+	
+	t2[0,0] := 1;
+	t2[0,1] := 2;
+	t2[1,0] := 3;
+	t2[1,1] := 4;	
+	
+	len_array := 2;
+	i := 0;
+	while i < len_array do
+	begin
+		j := 0;
+		while j < len_array do
+		begin
+			k := 0;
+			temp3 := 0;
+			while k < len_array do
+			begin
+				temp1 := t1[i, k];
+				temp2 := temp1 * t2[k, j];
+				temp3 := temp3 + temp2;
+				k := k + 1;
+			end;
+			t3[i, j] := temp3;
+			
+			j := j + 1;
+		end;
+		i := i + 1;
+	end;
+	
+	
+	i := 0;
+	while i < len_array do
+	begin
+		j := 0;
+		while j < len_array do
+		begin
+			write t3[i, j];
+			write "\n";
+			j := j + 1;
+		end;
+		i := i + 1;
+	end;
+end
+

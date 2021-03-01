@@ -1,0 +1,21 @@
+
+program fibonacci
+	var f1, f2, ftemp, n, count  : int;
+
+begin
+	f1 := 0;
+	f2 := 1;
+	
+	read n;
+	count := 0;
+	while count < n do
+	begin
+		ftemp := f1 + f2;
+		f1 := f2;
+		f2 := ftemp;
+		count := count + 1;		
+	end;
+	
+	write f1;
+	write "\n";
+end

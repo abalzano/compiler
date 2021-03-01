@@ -1,0 +1,7 @@
+program many_temporary
+    
+	var a1,a2 : int;
+
+begin
+	a1 := a1 + a2 + a1 + a2 + a1 + a2 + a1 + a2 ;
+end
